@@ -1,0 +1,11 @@
+2023-01-24 16:21:28.267 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-24 16:21:28.321 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-24 16:21:28.327 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 16:21:28.328 +01:00 [INF] Hosting environment: Development
+2023-01-24 16:21:28.328 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-24 16:21:36.528 +01:00 [INF] HTTP GET /WeatherForecast responded 200 in 28.9725 ms
+2023-01-24 23:58:35.302 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-24 23:58:35.350 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-24 23:58:35.356 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 23:58:35.358 +01:00 [INF] Hosting environment: Development
+2023-01-24 23:58:35.358 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
