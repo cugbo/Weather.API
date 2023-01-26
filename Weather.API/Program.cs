@@ -69,6 +69,7 @@ builder.Services.AddCors(options =>
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddScoped<IAuthManager, AuthManager>();
+builder.Services.AddScoped<IWeatherService, WeatherService>();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

@@ -1,0 +1,54 @@
+2023-01-26 11:46:51.254 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 11:46:51.329 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 11:46:51.338 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 11:46:51.339 +01:00 [INF] Hosting environment: Development
+2023-01-26 11:46:51.340 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 11:48:48.837 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 401 in 160.7451 ms
+2023-01-26 11:48:58.065 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 401 in 3.7712 ms
+2023-01-26 11:49:00.016 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 401 in 2.7953 ms
+2023-01-26 11:49:51.268 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 4535.8324 ms
+2023-01-26 11:50:15.007 +01:00 [ERR] HTTP GET /Weather/get-all-weather responded 500 in 130.4128 ms
+System.InvalidOperationException: Unable to resolve service for type 'Weather.API.Weather.Services.Interfaces.IWeatherService' while attempting to activate 'Weather.API.Controllers.WeatherController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method169(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-01-26 11:50:15.093 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Weather.API.Weather.Services.Interfaces.IWeatherService' while attempting to activate 'Weather.API.Controllers.WeatherController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method169(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-26 11:52:02.249 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 11:52:02.335 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 11:52:02.346 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 11:52:02.350 +01:00 [INF] Hosting environment: Development
+2023-01-26 11:52:02.351 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 11:52:25.688 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 3932.2178 ms
+2023-01-26 11:52:40.128 +01:00 [INF] HTTP GET /Weather/get-weather-by-id/1 responded 200 in 566.9462 ms
+2023-01-26 11:52:45.043 +01:00 [INF] HTTP GET /Weather/get-weather-by-id/4 responded 404 in 82.5302 ms
