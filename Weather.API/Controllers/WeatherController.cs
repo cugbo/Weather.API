@@ -36,6 +36,16 @@ namespace Weather.API.Controllers
                 return Ok(result);
             return NotFound();
         }
-
+        [HttpPost("add-weather")]
+        [Authorize]
+        public async Task<IActionResult> AddWeather([FromBody] Weathers weathers)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest("missing field");
+            var result = await _weather.AddWeather(weathers);
+            if (result == null) 
+                return BadRequest("cannot add weather");
+            return Ok(result);
+        }
     }
 }

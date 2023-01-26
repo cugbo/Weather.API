@@ -6,5 +6,6 @@ namespace Weather.API.Weather.Services.Interfaces
     {
         Task <List<Weathers>> GetAllWeathers();
         Task<Weathers> GetWeatherById(int id);
+        Task<Weathers> AddWeather(Weathers weathers);
     }
 }

@@ -15,6 +15,23 @@ namespace Weather.API.Weather.Services.Implementations
 
         }
 
+        public async Task<Weathers> AddWeather(Weathers weathers)
+        {
+            var weather = new Weathers
+            {
+                Id = weathers.Id,
+                Date = DateTime.Now,
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            };
+            _context.Weathers.Add(weather);
+
+            bool res = await _context.SaveChangesAsync() > 0;
+            if(!res)
+                return null;
+            return weather;
+        }
+
         public async Task<List<Weathers>> GetAllWeathers()
         {
             var weathers = await _context.Weathers.ToListAsync();
@@ -30,5 +47,9 @@ namespace Weather.API.Weather.Services.Implementations
                 return default;
             return weather;
         }
+        private static readonly string[] Summaries = new[]
+            {
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            };
     }
 }
