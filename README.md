@@ -14,7 +14,7 @@ Create a Simple Weather RESTful API using .NET6, your project should include au
 # Get Started with this app.
 # On Windows using Visual studio IDE
 
-Clone this repo and run the solution file, Preferably using visual studio 2022. Simply by clicking the soliution file in the package named ('Weather.API.sln'). Visual studio IDE will open the solution file, and the internal server IIS will open it in your default browser
+Clone this repo and run the solution file, Preferably using visual studio 2022. Simply by clicking the solution file in the package named ('Weather.API.sln'). Visual studio IDE will open the solution file, and the internal server IIS will open it in your default browser
 
 # On Windows Or Linux using VSCODE or (Other editor of choice)
 
