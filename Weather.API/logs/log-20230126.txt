@@ -93,3 +93,65 @@ System.InvalidOperationException: Unable to resolve service for type 'Weather.AP
 2023-01-26 19:58:49.805 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 5.4605 ms
 2023-01-26 19:59:05.470 +01:00 [INF] HTTP DELETE /Weather/remove-weather/7 responded 200 in 28.9502 ms
 2023-01-26 19:59:18.534 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 10.6330 ms
+2023-01-26 20:11:58.906 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:11:59.008 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:11:59.017 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:11:59.017 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:11:59.019 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:12:17.302 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 401 in 272.9963 ms
+2023-01-26 20:12:37.051 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 2599.6646 ms
+2023-01-26 20:13:02.700 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 403 in 17.6245 ms
+2023-01-26 20:13:08.334 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 403 in 1.6117 ms
+2023-01-26 20:13:09.317 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 403 in 0.2058 ms
+2023-01-26 20:14:09.996 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:14:10.042 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:14:10.048 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:14:10.048 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:14:10.049 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:14:31.254 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 403 in 285.2193 ms
+2023-01-26 20:15:07.787 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:15:07.833 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:15:07.838 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:15:07.838 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:15:07.839 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:15:32.703 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 2074.5985 ms
+2023-01-26 20:19:27.213 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:19:27.255 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:19:27.260 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:19:27.260 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:19:27.261 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:21:38.605 +01:00 [INF] HTTP POST /api/Auth/user-registration responded 200 in 79461.3654 ms
+2023-01-26 20:26:11.928 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:26:11.973 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:26:11.977 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:26:11.978 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:26:11.978 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:26:32.211 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 401 in 262.6202 ms
+2023-01-26 20:27:00.619 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 2597.8966 ms
+2023-01-26 20:27:26.788 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 80.7176 ms
+2023-01-26 20:27:42.727 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:27:42.825 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:27:42.833 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:27:42.833 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:27:42.834 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:28:01.916 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 1976.3024 ms
+2023-01-26 20:29:07.358 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:29:07.404 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:29:07.410 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:29:07.411 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:29:07.412 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:29:35.480 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 2726.8160 ms
+2023-01-26 20:29:58.702 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 154.9621 ms
+2023-01-26 20:30:48.475 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:30:48.515 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:30:48.519 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:30:48.520 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:30:48.520 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:31:05.571 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 403 in 300.5324 ms
+2023-01-26 20:31:28.465 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 1906.7033 ms
+2023-01-26 20:32:25.539 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 20:32:25.616 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 20:32:25.622 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 20:32:25.623 +01:00 [INF] Hosting environment: Development
+2023-01-26 20:32:25.623 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 20:32:53.943 +01:00 [INF] HTTP POST /Weather/add-weather responded 403 in 244.0886 ms

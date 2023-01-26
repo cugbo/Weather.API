@@ -20,7 +20,7 @@ namespace Weather.API.Controllers
         }
 
         [HttpGet("get-all-weather")]
-        [Authorize]
+        [Authorize(Roles = "Administrator, User")]
         public async Task<IActionResult> GetAllWeather()
         {
             var result = await _weather.GetAllWeathers();
@@ -29,7 +29,7 @@ namespace Weather.API.Controllers
             return NotFound();
         }
         [HttpGet("get-weather-by-id/{id}")]
-        [Authorize]
+        [Authorize(Roles = "Administrator, User")]
         public async Task<IActionResult> GetAllWeather(int id)
         {
             var result = await _weather.GetWeatherById(id);
@@ -38,7 +38,7 @@ namespace Weather.API.Controllers
             return NotFound();
         }
         [HttpPost("add-weather")]
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> AddWeather([FromBody] AddWeatherDto weathers)
         {
             if (!ModelState.IsValid)
@@ -49,7 +49,7 @@ namespace Weather.API.Controllers
             return Ok(result);
         }
         [HttpPatch("update-weather/{id}")]
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> UpdateWeather(int id, [FromBody] AddWeatherDto weathers)
         {
             var result = await _weather.UpdateWeather(id, weathers);
@@ -58,7 +58,7 @@ namespace Weather.API.Controllers
             return Ok(result);
         }
         [HttpDelete("remove-weather/{id}")]
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> RemoveWeather(int id)
         {
             var result = await _weather.DeleteWeather(id);
