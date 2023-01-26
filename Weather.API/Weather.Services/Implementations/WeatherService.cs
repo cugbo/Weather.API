@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Weather.API.Weather.Data;
 using Weather.API.Weather.Models;
+using Weather.API.Weather.Models.DTOS;
 using Weather.API.Weather.Services.Interfaces;
 
 namespace Weather.API.Weather.Services.Implementations
@@ -15,11 +16,10 @@ namespace Weather.API.Weather.Services.Implementations
 
         }
 
-        public async Task<Weathers> AddWeather(Weathers weathers)
+        public async Task<Weathers> AddWeather(AddWeatherDto weathers)
         {
             var weather = new Weathers
             {
-                Id = weathers.Id,
                 Date = DateTime.Now,
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
@@ -47,6 +47,33 @@ namespace Weather.API.Weather.Services.Implementations
                 return default;
             return weather;
         }
+
+
+        public async Task<Weathers> UpdateWeather(int id, AddWeatherDto weathers)
+        {
+            var weather = await _context.Weathers.FirstOrDefaultAsync(x => x.Id == id);
+            if (weather == null)
+                return default;
+            weather.TemperatureC = weathers.TemperatureC;
+            _context.Weathers.Update(weather);
+           bool result = await  _context.SaveChangesAsync() > 0;
+            if (!result)
+                return default;
+            return weather;
+        }
+
+        public async Task<bool> DeleteWeather(int id)
+        {
+            var weather = await _context.Weathers.FirstOrDefaultAsync(x => x.Id == id);
+            if (weather == null)
+                return default;
+            _context.Weathers.Remove(weather);
+            bool deleted = await _context.SaveChangesAsync() > 0;
+            if(deleted)
+                return deleted;
+            return false;
+        }
+
         private static readonly string[] Summaries = new[]
             {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

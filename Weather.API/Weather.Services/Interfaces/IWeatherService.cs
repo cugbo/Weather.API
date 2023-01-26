@@ -1,4 +1,5 @@
 ﻿using Weather.API.Weather.Models;
+using Weather.API.Weather.Models.DTOS;
 
 namespace Weather.API.Weather.Services.Interfaces
 {
@@ -6,6 +7,8 @@ namespace Weather.API.Weather.Services.Interfaces
     {
         Task <List<Weathers>> GetAllWeathers();
         Task<Weathers> GetWeatherById(int id);
-        Task<Weathers> AddWeather(Weathers weathers);
+        Task<Weathers> AddWeather(AddWeatherDto weathers);
+        Task<Weathers> UpdateWeather(int id, AddWeatherDto weathers);
+        Task<bool> DeleteWeather(int id);
     }
 }

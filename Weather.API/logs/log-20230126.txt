@@ -75,3 +75,21 @@ System.InvalidOperationException: Unable to resolve service for type 'Weather.AP
 2023-01-26 18:35:15.590 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
 2023-01-26 18:35:55.021 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 4112.9729 ms
 2023-01-26 18:36:44.710 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 401 in 32.9093 ms
+2023-01-26 19:39:36.107 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 19:39:36.157 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 19:39:36.162 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 19:39:36.162 +01:00 [INF] Hosting environment: Development
+2023-01-26 19:39:36.163 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 19:39:56.742 +01:00 [INF] HTTP POST /Weather/add-weather responded 200 in 3540.7563 ms
+2023-01-26 19:40:16.304 +01:00 [INF] HTTP POST /Weather/add-weather responded 200 in 61.0884 ms
+2023-01-26 19:56:49.414 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 19:56:49.486 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 19:56:49.492 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 19:56:49.493 +01:00 [INF] Hosting environment: Development
+2023-01-26 19:56:49.493 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 19:57:47.272 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 3842.1630 ms
+2023-01-26 19:58:13.662 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 136.7131 ms
+2023-01-26 19:58:36.725 +01:00 [INF] HTTP PATCH /Weather/update-weather/1 responded 200 in 165.3293 ms
+2023-01-26 19:58:49.805 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 5.4605 ms
+2023-01-26 19:59:05.470 +01:00 [INF] HTTP DELETE /Weather/remove-weather/7 responded 200 in 28.9502 ms
+2023-01-26 19:59:18.534 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 10.6330 ms

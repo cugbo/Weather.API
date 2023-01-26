@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Weather.API.Weather.Models;
+using Weather.API.Weather.Models.DTOS;
 using Weather.API.Weather.Services.Interfaces;
 
 namespace Weather.API.Controllers
@@ -37,14 +38,32 @@ namespace Weather.API.Controllers
             return NotFound();
         }
         [HttpPost("add-weather")]
-        [Authorize]
-        public async Task<IActionResult> AddWeather([FromBody] Weathers weathers)
+        //[Authorize]
+        public async Task<IActionResult> AddWeather([FromBody] AddWeatherDto weathers)
         {
             if (!ModelState.IsValid)
                 return BadRequest("missing field");
             var result = await _weather.AddWeather(weathers);
             if (result == null) 
                 return BadRequest("cannot add weather");
+            return Ok(result);
+        }
+        [HttpPatch("update-weather/{id}")]
+        //[Authorize]
+        public async Task<IActionResult> UpdateWeather(int id, [FromBody] AddWeatherDto weathers)
+        {
+            var result = await _weather.UpdateWeather(id, weathers);
+            if (result == null)
+                return BadRequest("cannot update weather");
+            return Ok(result);
+        }
+        [HttpDelete("remove-weather/{id}")]
+        //[Authorize]
+        public async Task<IActionResult> RemoveWeather(int id)
+        {
+            var result = await _weather.DeleteWeather(id);
+            if (!result)
+                return BadRequest("cannot delete weather");
             return Ok(result);
         }
     }
