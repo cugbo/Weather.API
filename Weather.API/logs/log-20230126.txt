@@ -62,3 +62,16 @@ System.InvalidOperationException: Unable to resolve service for type 'Weather.AP
 2023-01-26 18:17:21.840 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 7739.6055 ms
 2023-01-26 18:17:47.062 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 200 in 173.2419 ms
 2023-01-26 18:20:15.185 +01:00 [INF] HTTP POST /Weather/add-weather responded 200 in 2244.9194 ms
+2023-01-26 18:33:08.335 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 18:33:08.407 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 18:33:08.414 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 18:33:08.415 +01:00 [INF] Hosting environment: Development
+2023-01-26 18:33:08.415 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 18:34:05.267 +01:00 [INF] HTTP POST /api/Auth/login responded 401 in 6929.0656 ms
+2023-01-26 18:35:15.501 +01:00 [INF] Now listening on: https://localhost:7064
+2023-01-26 18:35:15.583 +01:00 [INF] Now listening on: http://localhost:5064
+2023-01-26 18:35:15.589 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-26 18:35:15.590 +01:00 [INF] Hosting environment: Development
+2023-01-26 18:35:15.590 +01:00 [INF] Content root path: C:\Users\CHIMA UGBO\Desktop\Weather.API\Weather.API\
+2023-01-26 18:35:55.021 +01:00 [INF] HTTP POST /api/Auth/login responded 200 in 4112.9729 ms
+2023-01-26 18:36:44.710 +01:00 [INF] HTTP GET /Weather/get-all-weather responded 401 in 32.9093 ms
