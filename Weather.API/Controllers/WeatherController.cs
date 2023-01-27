@@ -30,11 +30,12 @@ namespace Weather.API.Controllers
         }
         [HttpGet("get-weather-by-id/{id}")]
         [Authorize(Roles = "Administrator, User")]
-        public async Task<IActionResult> GetAllWeather(int id)
+        public async Task<IActionResult> GetWeather(int id)
         {
             var result = await _weather.GetWeatherById(id);
             if (result != null)
                 return Ok(result);
+            _logger.LogWarning($"No Record Found in {nameof(GetWeather)} with id {id}");
             return NotFound();
         }
         [HttpPost("add-weather")]
